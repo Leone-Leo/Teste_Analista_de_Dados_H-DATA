@@ -1,0 +1,7 @@
+A arquitetura de banco de dados sugerida é baseada em um modelo otimizado para data warehousing, conhecido como Star Schema. Nesse modelo, temos uma tabela central de fatos que armazena medidas quantitativas e várias tabelas de dimensão que contêm atributos descritivos. As tabelas de dimensão podem incluir dados como data, fornecedor, conta bancária, centro de custos, entre outros, dependendo das necessidades do negócio.
+
+Para estabelecer a estrutura do banco de dados, é importante criar as tabelas de dimensão com os atributos relevantes e a tabela de fatos que receberá os dados do Fluxo de Caixa.
+
+A ingestão de dados deve ser gerenciada de forma eficiente, considerando as atualizações periódicas. Isso envolve a identificação de novos registros e atualizações, a inserção dos novos registros e a atualização dos registros existentes, quando necessário. Manter um registro da última atualização ajuda a evitar duplicações e otimizar o processo.
+
+Automatizar o processo de ingestão, agendar atualizações periódicas e registrar todas as atualizações são práticas recomendadas para garantir a eficácia desse sistema.
